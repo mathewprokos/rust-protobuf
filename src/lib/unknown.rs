@@ -166,7 +166,7 @@ impl Clear for UnknownFields {
 }
 
 pub struct UnknownFieldIter<'s> {
-    entries: Option<hash_map::Entries<'s, u32, UnknownValues>>,
+    entries: Option<hash_map::Iter<'s, u32, UnknownValues>>,
 }
 
 impl<'s> Iterator<(u32, &'s UnknownValues)> for UnknownFieldIter<'s> {
